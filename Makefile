@@ -1,7 +1,7 @@
 # This Makefile is for the Acme::MyFirstModule::NANDO extension to perl.
 #
 # It was generated automatically by MakeMaker version
-# 6.98 (Revision: 69800) from the contents of
+# 6.62 (Revision: 66200) from the contents of
 # Makefile.PL. Don't edit this file, edit Makefile.PL instead.
 #
 #       ANY CHANGES MADE HERE WILL BE LOST!
@@ -20,7 +20,6 @@
 #     NAME => q[Acme::MyFirstModule::NANDO]
 #     PL_FILES => {  }
 #     PREREQ_PM => { Test::More=>q[0] }
-#     TEST_REQUIRES => {  }
 #     VERSION_FROM => q[lib/Acme/MyFirstModule/NANDO.pm]
 #     clean => { FILES=>q[Acme-MyFirstModule-NANDO-*] }
 #     dist => { COMPRESS=>q[gzip -9f], SUFFIX=>q[gz] }
@@ -30,7 +29,7 @@
 
 # --- MakeMaker const_config section:
 
-# These definitions are from config.sh (via C:/strawberry/perl/lib/Config.pm).
+# These definitions are from config.sh (via C:/Dwimperl/perl/lib/Config.pm).
 # They may have been overridden via Makefile.PL or on the command line.
 AR = ar
 CC = gcc
@@ -41,36 +40,36 @@ DLSRC = dl_win32.xs
 EXE_EXT = .exe
 FULL_AR = 
 LD = g++
-LDDLFLAGS = -mdll -s -L"C:\strawberry\perl\lib\CORE" -L"C:\strawberry\c\lib"
-LDFLAGS = -s -L"C:\strawberry\perl\lib\CORE" -L"C:\strawberry\c\lib"
+LDDLFLAGS = -mdll -s -L"C:\Dwimperl\perl\lib\CORE" -L"C:\Dwimperl\c\lib"
+LDFLAGS = -s -L"C:\Dwimperl\perl\lib\CORE" -L"C:\Dwimperl\c\lib"
 LIBC = 
 LIB_EXT = .a
 OBJ_EXT = .o
 OSNAME = MSWin32
-OSVERS = 6.2
+OSVERS = 4.0
 RANLIB = rem
-SITELIBEXP = C:\strawberry\perl\site\lib
-SITEARCHEXP = C:\strawberry\perl\site\lib
+SITELIBEXP = C:\Dwimperl\perl\site\lib
+SITEARCHEXP = C:\Dwimperl\perl\site\lib
 SO = dll
-VENDORARCHEXP = C:\strawberry\perl\vendor\lib
-VENDORLIBEXP = C:\strawberry\perl\vendor\lib
+VENDORARCHEXP = C:\Dwimperl\perl\vendor\lib
+VENDORLIBEXP = C:\Dwimperl\perl\vendor\lib
 
 
 # --- MakeMaker constants section:
 
 # Get dmake to read long commands like PM_TO_BLIB
-MAXLINELENGTH = 800000
+MAXLINELENGTH = 65536
 
 AR_STATIC_ARGS = cr
 DIRFILESEP = \\
 DFSEP = $(DIRFILESEP)
 NAME = Acme::MyFirstModule::NANDO
 NAME_SYM = Acme_MyFirstModule_NANDO
-VERSION = 0.02
+VERSION = 0.03
 VERSION_MACRO = VERSION
-VERSION_SYM = 0_02
+VERSION_SYM = 0_03
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 0.02
+XS_VERSION = 0.03
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib\arch
@@ -84,32 +83,32 @@ MAN3EXT = 3
 INSTALLDIRS = site
 DESTDIR = 
 PREFIX = $(SITEPREFIX)
-PERLPREFIX = C:\strawberry\perl
-SITEPREFIX = C:\strawberry\perl\site
-VENDORPREFIX = C:\strawberry\perl\vendor
-INSTALLPRIVLIB = C:\strawberry\perl\lib
+PERLPREFIX = C:\Dwimperl\perl
+SITEPREFIX = C:\Dwimperl\perl\site
+VENDORPREFIX = C:\Dwimperl\perl\vendor
+INSTALLPRIVLIB = C:\Dwimperl\perl\lib
 DESTINSTALLPRIVLIB = $(DESTDIR)$(INSTALLPRIVLIB)
-INSTALLSITELIB = C:\strawberry\perl\site\lib
+INSTALLSITELIB = C:\Dwimperl\perl\site\lib
 DESTINSTALLSITELIB = $(DESTDIR)$(INSTALLSITELIB)
-INSTALLVENDORLIB = C:\strawberry\perl\vendor\lib
+INSTALLVENDORLIB = C:\Dwimperl\perl\vendor\lib
 DESTINSTALLVENDORLIB = $(DESTDIR)$(INSTALLVENDORLIB)
-INSTALLARCHLIB = C:\strawberry\perl\lib
+INSTALLARCHLIB = C:\Dwimperl\perl\lib
 DESTINSTALLARCHLIB = $(DESTDIR)$(INSTALLARCHLIB)
-INSTALLSITEARCH = C:\strawberry\perl\site\lib
+INSTALLSITEARCH = C:\Dwimperl\perl\site\lib
 DESTINSTALLSITEARCH = $(DESTDIR)$(INSTALLSITEARCH)
-INSTALLVENDORARCH = C:\strawberry\perl\vendor\lib
+INSTALLVENDORARCH = C:\Dwimperl\perl\vendor\lib
 DESTINSTALLVENDORARCH = $(DESTDIR)$(INSTALLVENDORARCH)
-INSTALLBIN = C:\strawberry\perl\bin
+INSTALLBIN = C:\Dwimperl\perl\bin
 DESTINSTALLBIN = $(DESTDIR)$(INSTALLBIN)
-INSTALLSITEBIN = C:\strawberry\perl\site\bin
+INSTALLSITEBIN = C:\Dwimperl\perl\site\bin
 DESTINSTALLSITEBIN = $(DESTDIR)$(INSTALLSITEBIN)
-INSTALLVENDORBIN = C:\strawberry\perl\bin
+INSTALLVENDORBIN = C:\Dwimperl\perl\bin
 DESTINSTALLVENDORBIN = $(DESTDIR)$(INSTALLVENDORBIN)
-INSTALLSCRIPT = C:\strawberry\perl\bin
+INSTALLSCRIPT = C:\Dwimperl\perl\bin
 DESTINSTALLSCRIPT = $(DESTDIR)$(INSTALLSCRIPT)
-INSTALLSITESCRIPT = C:\strawberry\perl\site\bin
+INSTALLSITESCRIPT = C:\Dwimperl\perl\site\bin
 DESTINSTALLSITESCRIPT = $(DESTDIR)$(INSTALLSITESCRIPT)
-INSTALLVENDORSCRIPT = C:\strawberry\perl\bin
+INSTALLVENDORSCRIPT = C:\Dwimperl\perl\bin
 DESTINSTALLVENDORSCRIPT = $(DESTDIR)$(INSTALLVENDORSCRIPT)
 INSTALLMAN1DIR = none
 DESTINSTALLMAN1DIR = $(DESTDIR)$(INSTALLMAN1DIR)
@@ -123,16 +122,16 @@ INSTALLSITEMAN3DIR = $(INSTALLMAN3DIR)
 DESTINSTALLSITEMAN3DIR = $(DESTDIR)$(INSTALLSITEMAN3DIR)
 INSTALLVENDORMAN3DIR = $(INSTALLMAN3DIR)
 DESTINSTALLVENDORMAN3DIR = $(DESTDIR)$(INSTALLVENDORMAN3DIR)
-PERL_LIB = C:\strawberry\perl\lib
-PERL_ARCHLIB = C:\strawberry\perl\lib
+PERL_LIB = C:\Dwimperl\perl\lib
+PERL_ARCHLIB = C:\Dwimperl\perl\lib
 LIBPERL_A = libperl.a
 FIRST_MAKEFILE = Makefile
 MAKEFILE_OLD = Makefile.old
 MAKE_APERL_FILE = Makefile.aperl
 PERLMAINCC = $(CC)
-PERL_INC = C:\strawberry\perl\lib\CORE
-PERL = C:\strawberry\perl\bin\perl.exe
-FULLPERL = C:\strawberry\perl\bin\perl.exe
+PERL_INC = C:\Dwimperl\perl\lib\CORE
+PERL = C:\Dwimperl\perl\bin\perl.exe
+FULLPERL = C:\Dwimperl\perl\bin\perl.exe
 ABSPERL = $(PERL)
 PERLRUN = $(PERL)
 FULLPERLRUN = $(FULLPERL)
@@ -145,9 +144,9 @@ PERM_DIR = 755
 PERM_RW = 644
 PERM_RWX = 755
 
-MAKEMAKER   = C:/strawberry/perl/site/lib/ExtUtils/MakeMaker.pm
-MM_VERSION  = 6.98
-MM_REVISION = 69800
+MAKEMAKER   = C:/Dwimperl/perl/lib/ExtUtils/MakeMaker.pm
+MM_VERSION  = 6.62
+MM_REVISION = 66200
 
 # FULLEXT = Pathname for extension directory (eg Foo/Bar/Oracle).
 # BASEEXT = Basename part of FULLEXT. May be just equal FULLEXT. (eg Oracle)
@@ -188,7 +187,7 @@ INST_BOOT        =
 
 # Extra linker info
 EXPORT_LIST        = $(BASEEXT).def
-PERL_ARCHIVE       = $(PERL_INC)\libperl518.a
+PERL_ARCHIVE       = $(PERL_INC)\libperl514.a
 PERL_ARCHIVE_AFTER = 
 
 
@@ -199,12 +198,12 @@ PM_TO_BLIB = lib/Acme/MyFirstModule/NANDO.pm \
 
 
 # --- MakeMaker platform_constants section:
-MM_Win32_VERSION = 6.98
+MM_Win32_VERSION = 6.62
 
 
 # --- MakeMaker tool_autosplit section:
 # Usage: $(AUTOSPLITFILE) FileToSplit AutoDirToSplitInto
-AUTOSPLITFILE = $(ABSPERLRUN)  -e "use AutoSplit;  autosplit($$$$ARGV[0], $$$$ARGV[1], 0, 1, 1)" --
+AUTOSPLITFILE = $(ABSPERLRUN)  -e "use AutoSplit;  autosplit($$ARGV[0], $$ARGV[1], 0, 1, 1)" --
 
 
 
@@ -239,7 +238,6 @@ MACROSTART =
 MACROEND = 
 USEMAKEFILE = -f
 FIXIN = pl2bat.bat
-CP_NONEMPTY = $(ABSPERLRUN) -MExtUtils::Command::MM -e cp_nonempty --
 
 
 # --- MakeMaker makemakerdflt section:
@@ -253,7 +251,7 @@ TARFLAGS = cvf
 ZIP = zip
 ZIPFLAGS = -r
 COMPRESS = gzip -9f
-SUFFIX = .gz
+SUFFIX = gz
 SHAR = shar
 PREOP = $(NOECHO) $(NOOP)
 POSTOP = $(NOECHO) $(NOOP)
@@ -263,7 +261,7 @@ RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
 DISTNAME = Acme-MyFirstModule-NANDO
-DISTVNAME = Acme-MyFirstModule-NANDO-0.02
+DISTVNAME = Acme-MyFirstModule-NANDO-0.03
 
 
 # --- MakeMaker macro section:
@@ -385,15 +383,15 @@ NANDO.def: Makefile.PL
      -e "Mksymlists('NAME'=>\"Acme::MyFirstModule::NANDO\", 'DLBASE' => '$(BASEEXT)', 'DL_FUNCS' => {  }, 'FUNCLIST' => [], 'IMPORTS' => {  }, 'DL_VARS' => []);"
 
 
+# --- MakeMaker dynamic section:
+
+dynamic :: $(FIRST_MAKEFILE) $(INST_DYNAMIC) $(INST_BOOT)
+	$(NOECHO) $(NOOP)
+
+
 # --- MakeMaker dynamic_bs section:
 
 BOOTSTRAP =
-
-
-# --- MakeMaker dynamic section:
-
-dynamic :: $(FIRST_MAKEFILE) $(BOOTSTRAP) $(INST_DYNAMIC)
-	$(NOECHO) $(NOOP)
 
 
 # --- MakeMaker dynamic_lib section:
@@ -444,26 +442,25 @@ clean_subdirs :
 
 clean :: clean_subdirs
 	- $(RM_F) \
-	  $(BASEEXT).bso $(BASEEXT).def \
-	  $(BASEEXT).exp $(BASEEXT).x \
-	  $(BOOTSTRAP) $(INST_ARCHAUTODIR)\extralibs.all \
-	  $(INST_ARCHAUTODIR)\extralibs.ld $(MAKE_APERL_FILE) \
-	  *$(LIB_EXT) *$(OBJ_EXT) \
-	  *perl.core MYMETA.json \
-	  MYMETA.yml blibdirs.ts \
-	  core core.*perl.*.? \
+	  *$(LIB_EXT) core \
 	  core.[0-9] core.[0-9][0-9] \
-	  core.[0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9] \
-	  core.[0-9][0-9][0-9][0-9][0-9] lib$(BASEEXT).def \
-	  mon.out perl \
-	  perl$(EXE_EXT) perl.exe \
-	  perlmain.c pm_to_blib \
-	  pm_to_blib.ts so_locations \
-	  tmon.out 
+	  $(BASEEXT).bso $(INST_ARCHAUTODIR)\extralibs.ld \
+	  pm_to_blib.ts MYMETA.json \
+	  core.[0-9][0-9][0-9][0-9] MYMETA.yml \
+	  $(BASEEXT).x $(BOOTSTRAP) \
+	  perl$(EXE_EXT) tmon.out \
+	  $(INST_ARCHAUTODIR)\extralibs.all *$(OBJ_EXT) \
+	  pm_to_blib blibdirs.ts \
+	  core.[0-9][0-9][0-9][0-9][0-9] *perl.core \
+	  core.*perl.*.? $(MAKE_APERL_FILE) \
+	  $(BASEEXT).def perl \
+	  core.[0-9][0-9][0-9] mon.out \
+	  lib$(BASEEXT).def perlmain.c \
+	  perl.exe so_locations \
+	  $(BASEEXT).exp 
 	- $(RM_RF) \
-	  Acme-MyFirstModule-NANDO-* blib \
-	  dll.base dll.exp 
-	  $(NOECHO) $(RM_F) $(MAKEFILE_OLD)
+	  dll.exp dll.base \
+	  blib Acme-MyFirstModule-NANDO-* 
 	- $(MV) $(FIRST_MAKEFILE) $(MAKEFILE_OLD) $(DEV_NULL)
 
 
@@ -489,23 +486,23 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) author: >> META_new.yml
 	$(NOECHO) $(ECHO) "  - 'Fernando Flores <nando67@gmail.com>'" >> META_new.yml
 	$(NOECHO) $(ECHO) build_requires: >> META_new.yml
-	$(NOECHO) $(ECHO) "  Test::More: '0'" >> META_new.yml
+	$(NOECHO) $(ECHO) "  Test::More: 0" >> META_new.yml
 	$(NOECHO) $(ECHO) configure_requires: >> META_new.yml
-	$(NOECHO) $(ECHO) "  ExtUtils::MakeMaker: '0'" >> META_new.yml
+	$(NOECHO) $(ECHO) "  ExtUtils::MakeMaker: 0" >> META_new.yml
 	$(NOECHO) $(ECHO) "dynamic_config: 1" >> META_new.yml
-	$(NOECHO) $(ECHO) "generated_by: 'ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.141520'" >> META_new.yml
+	$(NOECHO) $(ECHO) "generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.120351'" >> META_new.yml
 	$(NOECHO) $(ECHO) "license: unknown" >> META_new.yml
 	$(NOECHO) $(ECHO) meta-spec: >> META_new.yml
 	$(NOECHO) $(ECHO) "  url: http://module-build.sourceforge.net/META-spec-v1.4.html" >> META_new.yml
-	$(NOECHO) $(ECHO) "  version: '1.4'" >> META_new.yml
+	$(NOECHO) $(ECHO) "  version: 1.4" >> META_new.yml
 	$(NOECHO) $(ECHO) "name: Acme-MyFirstModule-NANDO" >> META_new.yml
 	$(NOECHO) $(ECHO) no_index: >> META_new.yml
 	$(NOECHO) $(ECHO) "  directory:" >> META_new.yml
 	$(NOECHO) $(ECHO) "    - t" >> META_new.yml
 	$(NOECHO) $(ECHO) "    - inc" >> META_new.yml
 	$(NOECHO) $(ECHO) requires: >> META_new.yml
-	$(NOECHO) $(ECHO) "  perl: '5.006'" >> META_new.yml
-	$(NOECHO) $(ECHO) "version: '0.02'" >> META_new.yml
+	$(NOECHO) $(ECHO) "  perl: 5.006" >> META_new.yml
+	$(NOECHO) $(ECHO) "version: 0.03" >> META_new.yml
 	-$(NOECHO) $(MV) META_new.yml $(DISTVNAME)/META.yml
 	$(NOECHO) $(ECHO) Generating META.json
 	$(NOECHO) $(ECHO) {{ > META_new.json
@@ -514,7 +511,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) "      \"Fernando Flores ^<nando67^@gmail.com^>\"" >> META_new.json
 	$(NOECHO) $(ECHO) "   ]," >> META_new.json
 	$(NOECHO) $(ECHO) "   \"dynamic_config\" : 1," >> META_new.json
-	$(NOECHO) $(ECHO) "   \"generated_by\" : \"ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.141520\"," >> META_new.json
+	$(NOECHO) $(ECHO) "   \"generated_by\" : \"ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.120351\"," >> META_new.json
 	$(NOECHO) $(ECHO) "   \"license\" : [" >> META_new.json
 	$(NOECHO) $(ECHO) "      \"unknown\"" >> META_new.json
 	$(NOECHO) $(ECHO) "   ]," >> META_new.json
@@ -547,7 +544,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) "      }}" >> META_new.json
 	$(NOECHO) $(ECHO) "   }}," >> META_new.json
 	$(NOECHO) $(ECHO) "   \"release_status\" : \"stable\"," >> META_new.json
-	$(NOECHO) $(ECHO) "   \"version\" : \"0.02\"" >> META_new.json
+	$(NOECHO) $(ECHO) "   \"version\" : \"0.03\"" >> META_new.json
 	$(NOECHO) $(ECHO) }} >> META_new.json
 	-$(NOECHO) $(MV) META_new.json $(DISTVNAME)/META.json
 
@@ -571,7 +568,7 @@ manifest :
 	$(PERLRUN) "-MExtUtils::Manifest=mkmanifest" -e mkmanifest
 
 veryclean : realclean
-	$(RM_F) *~ */*~ *.orig */*.orig *.bak */*.bak *.old */*.old
+	$(RM_F) *~ */*~ *.orig */*.orig *.bak */*.bak *.old */*.old 
 
 
 
@@ -586,7 +583,6 @@ tardist : $(DISTVNAME).tar$(SUFFIX)
 
 uutardist : $(DISTVNAME).tar$(SUFFIX)
 	uuencode $(DISTVNAME).tar$(SUFFIX) $(DISTVNAME).tar$(SUFFIX) > $(DISTVNAME).tar$(SUFFIX)_uu
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).tar$(SUFFIX)_uu'
 
 $(DISTVNAME).tar$(SUFFIX) : distdir
 	$(PREOP)
@@ -594,7 +590,6 @@ $(DISTVNAME).tar$(SUFFIX) : distdir
 	$(TAR) $(TARFLAGS) $(DISTVNAME).tar $(DISTVNAME)
 	$(RM_RF) $(DISTVNAME)
 	$(COMPRESS) $(DISTVNAME).tar
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).tar$(SUFFIX)'
 	$(POSTOP)
 
 zipdist : $(DISTVNAME).zip
@@ -604,14 +599,12 @@ $(DISTVNAME).zip : distdir
 	$(PREOP)
 	$(ZIP) $(ZIPFLAGS) $(DISTVNAME).zip $(DISTVNAME)
 	$(RM_RF) $(DISTVNAME)
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).zip'
 	$(POSTOP)
 
 shdist : distdir
 	$(PREOP)
 	$(SHAR) $(DISTVNAME) > $(DISTVNAME).shar
 	$(RM_RF) $(DISTVNAME)
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).shar'
 	$(POSTOP)
 
 
@@ -647,17 +640,17 @@ ci :
 distmeta : create_distdir metafile
 	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e "exit unless -e q{{META.yml}};\
 eval {{ maniadd({{q{{META.yml}} => q{{Module YAML meta-data (added by MakeMaker)}}}}) }}\
-    or print \"Could not add META.yml to MANIFEST: $$$${{'^@'}}\n\"" --
+    or print \"Could not add META.yml to MANIFEST: $${{'^@'}}\n\"" --
 	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e "exit unless -f q{{META.json}};\
 eval {{ maniadd({{q{{META.json}} => q{{Module JSON meta-data (added by MakeMaker)}}}}) }}\
-    or print \"Could not add META.json to MANIFEST: $$$${{'^@'}}\n\"" --
+    or print \"Could not add META.json to MANIFEST: $${{'^@'}}\n\"" --
 
 
 
 # --- MakeMaker distsignature section:
 distsignature : create_distdir
-	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e "eval {{ maniadd({{q{{SIGNATURE}} => q{{Public-key signature (added by MakeMaker)}}}}) }}\
-    or print \"Could not add SIGNATURE to MANIFEST: $$$${{'^@'}}\n\"" --
+	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e "eval {{ maniadd({{q{{SIGNATURE}} => q{{Public-key signature (added by MakeMaker)}}}}) }} \
+    or print \"Could not add SIGNATURE to MANIFEST: $${{'^@'}}\n\"" --
 	$(NOECHO) cd $(DISTVNAME) && $(TOUCH) SIGNATURE
 	cd $(DISTVNAME) && cpansign -s
 
@@ -726,7 +719,6 @@ pure_vendor_install :: all
 		$(INST_SCRIPT) $(DESTINSTALLVENDORSCRIPT) \
 		$(INST_MAN1DIR) $(DESTINSTALLVENDORMAN1DIR) \
 		$(INST_MAN3DIR) $(DESTINSTALLVENDORMAN3DIR)
-
 
 doc_perl_install :: all
 	$(NOECHO) $(ECHO) Appending installation info to $(DESTINSTALLARCHLIB)/perllocal.pod
@@ -804,7 +796,7 @@ $(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP)
 
 # --- MakeMaker makeaperl section ---
 MAP_TARGET    = perl
-FULLPERL      = C:\strawberry\perl\bin\perl.exe
+FULLPERL      = C:\Dwimperl\perl\bin\perl.exe
 
 $(MAP_TARGET) :: static $(MAKE_APERL_FILE)
 	$(MAKE) $(USEMAKEFILE) $(MAKE_APERL_FILE) $@
@@ -834,7 +826,7 @@ subdirs-test ::
 
 
 test_dynamic :: pure_all
-	$(FULLPERLRUN) "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness($(TEST_VERBOSE), '$(INST_LIB)', '$(INST_ARCHLIB)')" $(TEST_FILES)
+	$(FULLPERLRUN) "-MExtUtils::Command::MM" "-e" "test_harness($(TEST_VERBOSE), '$(INST_LIB)', '$(INST_ARCHLIB)')" $(TEST_FILES)
 
 testdb_dynamic :: pure_all
 	$(FULLPERLRUN) $(TESTDB_SW) "-I$(INST_LIB)" "-I$(INST_ARCHLIB)" $(TEST_FILE)
@@ -848,12 +840,12 @@ testdb_static :: testdb_dynamic
 # --- MakeMaker ppd section:
 # Creates a PPD (Perl Package Description) for a binary distribution.
 ppd :
-	$(NOECHO) $(ECHO) "<SOFTPKG NAME=\"$(DISTNAME)\" VERSION=\"$(VERSION)\">" > $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) "<SOFTPKG NAME=\"$(DISTNAME)\" VERSION=\"0.03\">" > $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "    <ABSTRACT>The great new Acme::MyFirstModule::NANDO!</ABSTRACT>" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "    <AUTHOR>Fernando Flores &lt;nando67@gmail.com&gt;</AUTHOR>" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "    <IMPLEMENTATION>" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "        <PERLCORE VERSION=\"5,006,0,0\" />" >> $(DISTNAME).ppd
-	$(NOECHO) $(ECHO) "        <ARCHITECTURE NAME=\"MSWin32-x64-multi-thread-5.18\" />" >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) "        <ARCHITECTURE NAME=\"MSWin32-x86-multi-thread-5.14\" />" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "        <CODEBASE HREF=\"\" />" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "    </IMPLEMENTATION>" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) ^</SOFTPKG^> >> $(DISTNAME).ppd

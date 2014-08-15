@@ -137,6 +137,5 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 =cut
-dfklsajf;
 
 1; # End of Acme::MyFirstModule::NANDO
